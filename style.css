@@ -1,0 +1,58 @@
+
+body {
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+    margin: 0;  
+    background-color: #003366;
+    height: 100vh; 
+  }
+  
+
+  h1 {
+    color: white;
+    font-size: 2em; 
+    margin-bottom: 20px; 
+    text-align: center;
+    position: relative; 
+  }
+  #demo {
+    margin-top: 2500px;
+  }
+  
+  #demo .new-div {
+    border: 2px solid white;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    width: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+
+  #demo .new-div span {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    color: white;
+  }
+  
+
+  #demo .new-div button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    background-color: white;
+    color: white;
+    border-radius: 50px;
+    margin-left: auto;
+  }
+  
+
+  #demo .new-div button i {
+    color: black;
+  }
+  
