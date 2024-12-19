@@ -81,3 +81,7 @@ body {
     top: auto; 
     margin-bottom: 20px;
   }
+
+  .newUrlButton:hover {
+    background-color: #995b0f;
+  }
