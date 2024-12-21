@@ -7,7 +7,7 @@ body {
     margin: 0;  
     background-color: #003366;
     height: 100vh; 
-    background: url("/assets/bg.jpg");
+    background-color: #003366 !important;
     overflow: auto;
     height: auto; /* Erlaubt, dass der Inhalt sich entsprechend ausdehnt */
     overflow-y: auto;
