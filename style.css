@@ -1,87 +1,138 @@
-
+/* Allgemeines Styling */
 body {
-    display: flex;
-    flex-direction: column; 
-    justify-content: center;
-    align-items: center;
-    margin: 0;  
-    background-color: #003366;
-    height: 100vh; 
-    background: url("/assets/bg.jpg");
-    overflow: auto;
-    height: auto; /* Erlaubt, dass der Inhalt sich entsprechend ausdehnt */
-    overflow-y: auto;
-  }
-  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  background-color: #003366;
+  background: url("/assets/bg.jpg") no-repeat center center fixed;
+  background-size: cover;
+  min-height: 100vh;
+  overflow-y: auto;
+  font-family: "Roboto", sans-serif;
+}
 
+/* Überschrift */
+h1 {
+  margin: 20px 0;
+  color: white;
+  font-size: 2rem;
+  text-align: center;
+  font-weight: 800;
+}
+
+/* Container für Demo */
+#demo {
+  width: 90%;
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+  color: white;
+}
+
+#demo .new-div {
+  border: 2px solid white;
+  margin: 10px 0;
+  padding: 15px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center; /* Elemente innerhalb einer Zeile ausrichten */
+  justify-content: space-between; /* Abstand zwischen Text und Button */
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+#demo .new-div span {
+  font-weight: 400;
+  margin: 0; /* Kein Abstand erforderlich */
+}
+
+#demo .new-div button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  border: none;
+  background-color: white;
+  color: #003366;
+  border-radius: 50px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+#demo .new-div button:hover {
+  background-color: #003366;
+  color: white;
+}
+
+/* Button mit Icon */
+#demo .new-div button i {
+  margin-left: 8px;
+}
+
+/* Allgemeine Buttons */
+.newUrlButton {
+  margin: 20px 0;
+  background-color: #cc7914;
+  color: white;
+  border: none;
+  width: 200px;
+  border-radius: 10px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.newUrlButton:hover {
+  background-color: #995b0f;
+}
+
+/* Responsives Design */
+@media (max-width: 768px) {
   h1 {
-    margin-top: 20px;
-    color: white;
-    font-size: 2em; 
-    margin-bottom: 20px; 
-    text-align: center;
-    position: relative; 
-    font-family: "Roboto", sans-serif;
-    font-weight: 800;
-    color: white;
+      font-size: 1.5rem;
   }
-  #demo {
-    margin-top: 0px;
-    font-family: "Roboto", sans-serif;
-    font-weight: 400;
-    color: white;
-  }
-  
+
   #demo .new-div {
-    border: 2px solid white;
-    margin: 10px;
-    padding: 10px;
-    border-radius: 10px;
-    width: 500px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+      width: 100%;
+      padding: 10px;
+      flex-direction: column; /* Auf kleineren Bildschirmen untereinander */
+      align-items: center;
   }
-  
 
   #demo .new-div span {
-    font-family: "Roboto", sans-serif;
-    font-weight: 400;
-    color: white;
+      margin-bottom: 10px;
   }
-  
 
   #demo .new-div button {
-    padding: 10px 20px;
-    font-size: 16px;
-    cursor: pointer;
-    border: none;
-    background-color: white;
-    color: white;
-    border-radius: 50px;
-    margin-left: auto;
+      font-size: 0.9rem;
+      padding: 8px 15px;
   }
-  
 
-  #demo .new-div button i {
-    color: black;
-  }
-  
   .newUrlButton {
-    margin-top: 20px;
-    background-color: #cc7914;
-    color: white;
-    border: none;
-    width: 200px;
-    border-radius: 10px;
-    padding: 10px 20px;
-    font-size: 16px;
-    cursor: pointer;
-    position: relative;
-    top: auto; 
-    margin-bottom: 20px;
+      width: 100%;
+      font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+      font-size: 1.2rem;
   }
 
-  .newUrlButton:hover {
-    background-color: #995b0f;
+  #demo {
+      width: 100%;
   }
+
+  #demo .new-div {
+      padding: 10px;
+  }
+
+  #demo .new-div button {
+      font-size: 0.8rem;
+  }
+
+  .newUrlButton {
+      font-size: 0.8rem;
+      padding: 8px 10px;
+  }
+}
